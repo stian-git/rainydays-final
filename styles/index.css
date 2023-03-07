@@ -1,0 +1,31 @@
+.main__image {
+  display: inline-flex;
+  background-image: url("../images/pexels-monicore-134068-quart.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  width: 371.5px;
+  height: 264.5px;
+  margin-top: 20em;
+}
+
+.main__content {
+  background-color: rgba(208, 217, 209, 0.54);
+  border: 1px solid black;
+  border-radius: 25px;
+  position: relative;
+  top: -19em;
+  height: 18em;
+}
+
+main p {
+  color: black;
+  font-size: 1em;
+  line-height: 1em;
+  padding: 4px;
+  margin: 16px 10px;
+}
+
+.adjustment_topmargin {
+  margin-top: 15%;
+}

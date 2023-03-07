@@ -1,0 +1,166 @@
+.main__jacketlist {
+    display: block;
+    color: #000;
+    text-align: center;
+}
+
+.main__jacketlist a {
+    display: contents;
+}
+.jacketcontainer {
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: var(--color_texture_bg);
+    margin: 0.5em;
+    overflow: hidden;
+    padding: 5%;
+    text-align: center;
+}
+
+.image_container img {
+    width: 90%;
+    border: 1px solid black;
+}
+.jacketcontainer img {
+    border-radius: 25px;
+}
+.image_container {
+    position: relative;
+}
+.image_container svg {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    z-index: 1;
+    width: 35%;
+    border-radius: 50px;
+    animation-name: attentionbutton;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes attentionbutton {
+    0% {
+        background-color: var(--color_bestbuy_sticker_bg);
+    }
+    50% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: var(--color_bestbuy_sticker_bg);
+    }
+}
+
+.jacket_info {
+    white-space: nowrap;
+    font-family: var(--font-header), Verdana, sans-serif;
+    display: grid;
+    justify-items: left;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "jacket_header jacket_header" "jacket_price jacket_gender" "jacket-button jacket-button";
+}
+
+.jacket_info h2 {
+    grid-area: jacket_header;
+    font-size: 1.6em;
+    margin: 0px 0px 0px 5%;
+    color: black;
+}
+.jacketprice {
+    grid-area: jacket_price;
+    font-size: 190%;
+    margin: 8% 0px 0px 10%;
+    padding: 0px;
+}
+.jacketgender {
+    grid-area: jacket_gender;
+    margin: 0px;
+    justify-self: right;
+    align-self: self-end;
+}
+
+.jacketgender img {
+    width: 2em;
+}
+
+.jacketsale {
+    background-color: var(--color_cta_product_sale);
+}
+
+.filter-container {
+    margin-top: 5px;
+}
+
+.filter-container p {
+    text-align: left;
+    font-size: 1em;
+    font-family: var(--font-header), Oswald, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+.filter-container label {
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.filter_gender label {
+    margin-left: 3px;
+}
+
+.filter-container fieldset {
+    margin-right: 0px;
+    padding-right: 0px;
+    cursor: default;
+}
+.filter-container input[type="checkbox"] {
+    position: relative;
+    top: 2px;
+    right: 4px;
+    /* cursor: pointer; */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    cursor: pointer;
+}
+
+fieldset .filter_gender {
+    display: flex;
+    margin: 3px 100px;
+}
+
+.filter-container form {
+    display: inline-flex;
+}
+
+.filterinfo {
+    align-self: center;
+}
+
+#filter_tooltip {
+    background-color: var(--color_texture_bg);
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    position: inherit;
+    display: block;
+    top: 4px;
+    left: -30px;
+}
+
+.fa-info-circle {
+    color: var(--color_tooltip);
+    font-size: 3em;
+    border-radius: 25px;
+}
+
+.fa-info-circle:hover {
+    border-radius: 25px;
+    border: 2px solid var(--color_tooltip);
+}
+
+.tooltip_top.gender {
+    left: -62px;
+    top: -31px;
+}

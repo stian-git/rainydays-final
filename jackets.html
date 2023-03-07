@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Rainy Days Jackets. Overview of all our famous jackets." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/c42e915e6a.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for My site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2719205, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/jackets.css" rel="stylesheet" />
+    <link href="styles/media.css" rel="stylesheet" />
+    <title>Rainy Days | Jackets</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__topline"></div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/RainyDays_Logo.png" alt="Rainy days company logo" aria-label="Rainy Days Logo" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <a href="index.html" title="Home">
+            <li>
+              <img src="images/icon_button_home.png" alt="Home" aria-label="Home" />
+              Home
+            </li>
+          </a>
+          <li class="currentpage">
+            <img src="images/icon_button_jacket.png" alt="Jackets" aria-label="Jackets" />
+            Jackets
+          </li>
+          <a href="about.html" title="About us">
+            <li>
+              <img src="images/icon_button_info.png" alt="About us" aria-label="About us" />
+              About
+            </li>
+          </a>
+          <a href="contact.html" title="Contact">
+            <li>
+              <img src="images/icon_button_phone.png" alt="Contact info" aria-label="Contact info" />
+              Contact
+            </li>
+          </a>
+        </ul>
+      </nav>
+
+      <h1>Jackets</h1>
+    </header>
+    <aside>
+      <div class="aside__scalefix"></div>
+      <div class="mobile_nav aside__container">
+        <div class="menu">
+          <label for="burgermenu">
+            <i class="fas fa-bars burgermenu" id="burger"></i>
+          </label>
+        </div>
+        <div class="basket">
+          <div class="basket_container" id="mobile_basket">
+            <a href="checkout.html" class="basket" title="Checkout Basket">
+              <span class="basket_items-number">0</span>
+              <div class="fas fa-shopping-cart fa-flip-horizontal fa-3x" aria-label="Shopping basket"></div>
+            </a>
+          </div>
+        </div>
+        <div class="search">
+          <div class="aside__search-container aside__search aside__container">
+            <form action="jackets.html" method="get" class="aside__search-field">
+              <input type="search" name="q" id="searchfield" placeholder=" Product Search" title="Search field" />
+              <button type="submit"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <input type="checkbox" id="burgermenu" class="hamburger-menu" name="burgermenu" />
+      <nav class="mobile_menu">
+        <ul>
+          <a href="index.html" title="Home">
+            <li>
+              <img src="images/icon_button_home.png" alt="Home" aria-label="Home" />
+              Home
+            </li>
+          </a>
+          
+            <li class="currentpage">
+              <img src="images/icon_button_jacket.png" alt="Jackets" aria-label="Jackets" />
+              Jackets
+            </li>
+          </a>
+          <a href="about.html" title="About us">
+          <li>
+            <img src="images/icon_button_info.png" alt="About us" aria-label="About us" />
+            About
+          </li>
+        </a>
+          <a href="contact.html" title="Contact">
+            <li>
+              <img src="images/icon_button_phone.png" alt="Contact info" aria-label="Contact info" />
+              Contact
+            </li>
+          </a>
+        </ul>
+      </nav>
+      <div class="filter-container aside__container">
+        <form>
+          <fieldset>
+            <p>Gender:</p>
+            <div class="filter_gender">
+              <input type="radio" name="gender" id="female" value="female" />
+              <label for="female" class="filter">Female</label>
+            </div>
+            <div class="filter_gender">
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="male" class="filter">Male</label>
+            </div>
+            <div class="filter_gender">
+              <input type="radio" name="gender" id="both" value="both" checked />
+              <label for="both" class="filter">Both</label>
+            </div>
+            <p>Sizes:</p>
+            <label for="size-s" class="filter">S</label>
+            <input type="checkbox" name="size-s" id="size-s" value="S" />
+            <label for="size-m" class="filter">M</label>
+            <input type="checkbox" name="size-m" id="size-m" value="M" />
+            <label for="size-l" class="filter">L</label>
+            <input type="checkbox" name="size-l" id="size-l" value="L" />
+            <label for="size-xl" class="filter">XL</label>
+            <input type="checkbox" name="size-xl" id="size-xl" value="XL" />
+            <label for="size-xxl" class="filter">XXL</label>
+            <input type="checkbox" name="size-xxl" id="size-xxl" value="XXL" />
+          </fieldset>
+          <div class="filterinfo required">
+            <i class="fas fa-info-circle"></i>
+            <span class="tooltip_top" id="filter_tooltip">Use filters to narrow your product search.</span>
+          </div>
+        </form>
+      </div>
+      <div class="aside__scalefix"></div>
+      <div class="banner_container top"></div>
+    </aside>
+    <main>
+      <i class="fas fa-spinner"></i>
+      <section class="main__jacketlist"></section>   
+    </main>
+    <section class="banner_container">
+      <div class="banner_container bottom"></div>
+    </section>
+    <footer></footer>
+    <script src="js/common.js"></script>
+    <script src="js/addProducts.js"></script>
+  </body>
+</html>

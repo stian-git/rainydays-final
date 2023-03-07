@@ -1,0 +1,29 @@
+.body__terms {
+  display: inline-block;
+}
+
+.main_terms {
+  display: inline-block;
+  margin: 2% 10%;
+}
+#termslogo {
+  width: 300px;
+}
+.header__terms {
+  display: block;
+  justify-self: center;
+  text-align: center;
+}
+
+.term_header {
+  margin-top: 80px;
+}
+#terms__footer {
+  width: unset;
+}
+
+.back_container {
+  display: inline-block;
+  width: 50%;
+  margin: 50px 0px 100px 0px;
+}

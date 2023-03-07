@@ -1,0 +1,31 @@
+.contact__main_container {
+  width: 70vw;
+}
+.contact_info p {
+  margin: 0px;
+  white-space: nowrap;
+}
+.contact_info__openinghours {
+  grid-area: contact_hours;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 0px 2em 0px;
+}
+.contact_info__details {
+  grid-area: contact_details;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2.8em 0px;
+  grid-row: none;
+  justify-self: left;
+}
+.contact_map {
+  width: 100%;
+  justify-self: center;
+}
+.contact_map iframe {
+  margin-top: 2em;
+  width: 70vw;
+  height: 15em;
+  border: solid black;
+}

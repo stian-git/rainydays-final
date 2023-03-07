@@ -1,0 +1,206 @@
+/* checkout */
+.checkout__container {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.checkout__container input {
+    border-radius: 6px;
+    height: 1.4em;
+}
+
+select {
+    border-radius: 6px;
+    height: 1.8em;
+    border: 2px solid black;
+}
+
+.checkout__container section {
+    flex: 2;
+    min-width: 300px;
+    background-color: var(--color_texture_bg);
+    padding: 0px 10px;
+    border-radius: 15px;
+    margin: 0px 2%;
+    /* for 12 lines we needed 30px below: */
+    padding-bottom: 30px;
+}
+
+.checkout__container fieldset {
+    border: none;
+    /* display: grid; */
+    display: block;
+    /* added 2.3: */
+    height: fit-content;
+}
+
+.checkout__container form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "form_personal" "form_delivery" "form_payment" "form_orderbutton";
+    font-size: 0.8em;
+    line-height: 2.5em;
+    justify-items: center;
+    /* added 2.3: */
+    height: fit-content;
+}
+
+/* CTA + terms */
+.placeorder_container {
+    grid-area: form_orderbutton;
+    text-align: center;
+    margin-top: 40px;
+}
+.placeorder_container button {
+    margin: 20px 0px 80px 0px;
+    width: 210px;
+    display: block;
+}
+
+fieldset:nth-child(1) {
+    grid-area: form_personal;
+}
+
+fieldset:nth-child(1) input,
+fieldset:nth-child(3) input,
+fieldset:nth-child(3) select {
+    width: 200px;
+}
+fieldset:nth-child(2) {
+    grid-area: form_payment;
+}
+
+fieldset:nth-child(3) {
+    grid-area: form_delivery;
+    align-content: flex-start;
+    margin: 0px;
+    padding: 0px;
+}
+
+.checkout__container h2 {
+    text-align: center;
+}
+
+/* basket */
+table {
+    border-radius: 15px;
+    width: 100%;
+    font-size: 0.7em;
+    text-align: center;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+tr {
+    border-radius: 50px;
+}
+tr:nth-child(even) {
+    background: white;
+}
+
+tr:nth-child(odd) {
+    background: var(--color_nav);
+}
+.rowheader {
+    height: 3em;
+}
+
+table .name {
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+}
+
+table .name img {
+    margin-top: 5px;
+}
+.basket__summary {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    font-size: 0.8em;
+    margin-top: 20px;
+    display: grid;
+    text-align: right;
+    padding: 5px;
+}
+
+.basket__summary p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.basket_boldtext,
+.basket_headertext {
+    font-weight: bold;
+}
+.basket_total {
+    line-height: 3em;
+}
+
+.basket_navbutton {
+    height: 1.5em;
+    margin: 0px 1px;
+}
+.basket_qty {
+    font-size: 1.5em;
+    display: inline;
+    padding: 0px 0px;
+    margin: 0;
+}
+
+.basket_productimage {
+    height: 4em;
+    border-radius: 20%;
+}
+.basket_productname {
+    margin: 0px;
+    font-size: 1.2em;
+    padding-left: 0px;
+}
+
+.deletebutton,
+.subtractbutton,
+.addbutton {
+    cursor: pointer;
+}
+/* Validation: */
+
+.validationerror {
+    border-color: var(--color_validation_failed);
+}
+
+.fa-check-circle {
+    color: var(--color_validation_ok);
+    display: none;
+}
+
+.fa-exclamation-circle {
+    color: var(--color_validation_failed);
+    display: none;
+}
+
+.fa-asterisk {
+    font-size: 10px;
+}
+
+.helptext {
+    font-size: 0.9em;
+    margin: 0 2px 0 0;
+    background-color: pink;
+    padding: 2px 0 2px 5px;
+    border-radius: 6px;
+    display: none;
+}
+
+.fa-spinner {
+    display: block;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+}
+
+label[for="terms"] {
+    display: inline;
+}

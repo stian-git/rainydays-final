@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Rainy Days Jackets. Check-out page." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/c42e915e6a.js" crossorigin="anonymous"></script>
+        <!-- Hotjar Tracking Code for My site -->
+        <script>
+            (function (h, o, t, j, a, r) {
+                h.hj =
+                    h.hj ||
+                    function () {
+                        (h.hj.q = h.hj.q || []).push(arguments);
+                    };
+                h._hjSettings = { hjid: 2719205, hjsv: 6 };
+                a = o.getElementsByTagName("head")[0];
+                r = o.createElement("script");
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+        </script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet" />
+        <link href="styles/styles.css" rel="stylesheet" />
+        <link href="styles/checkout.css" rel="stylesheet" />
+        <link href="styles/media.css" rel="stylesheet" />
+        <title>Rainy Days | Check-Out</title>
+    </head>
+    <body>
+        <header>
+            <div class="header__topline"></div>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/RainyDays_Logo.png" alt="Rainy days company logo" aria-label="Rainy Days Logo" />
+                </a>
+            </div>
+
+            <nav>
+                <ul>
+                    <a href="index.html" title="Home">
+                        <li>
+                            <img src="images/icon_button_home.png" alt="Home" aria-label="Home" />
+                            Home
+                        </li>
+                    </a>
+                    <a href="jackets.html" title="Jackets">
+                        <li>
+                            <img src="images/icon_button_jacket.png" alt="Jackets" aria-label="Jackets" />
+                            Jackets
+                        </li>
+                    </a>
+                    <a href="about.html" title="About us">
+                        <li>
+                            <img src="images/icon_button_info.png" alt="About us" aria-label="About us" />
+                            About
+                        </li>
+                    </a>
+                    <a href="contact.html" title="Contact">
+                        <li>
+                            <img src="images/icon_button_phone.png" alt="Contact info" aria-label="Contact info" />
+                            Contact
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+
+            <h1>Check out</h1>
+        </header>
+        <aside>
+            <div class="aside__scalefix"></div>
+            <div class="mobile_nav aside__container">
+                <div class="menu">
+                    <label for="burgermenu">
+                        <i class="fas fa-bars burgermenu" id="burger"></i>
+                    </label>
+                </div>
+                <div class="basket">
+                    <div class="basket_container hidden" id="mobile_basket">
+                        <a class="basket nolink" title="Checkout Basket">
+                            <span class="basket_items-number">0</span>
+                            <div
+                                class="fas fa-shopping-cart fa-flip-horizontal fa-3x"
+                                aria-label="Shopping basket"
+                            ></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="search">
+                    <div class="aside__search-container aside__search aside__container">
+                        <form action="jackets.html" method="get" class="aside__search-field">
+                            <input
+                                type="search"
+                                name="q"
+                                id="searchfield"
+                                placeholder=" Product Search"
+                                title="Search field"
+                            />
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <input type="checkbox" id="burgermenu" class="hamburger-menu" name="burgermenu" />
+            <nav class="mobile_menu">
+                <ul>
+                    <a href="index.html" title="Home">
+                        <li>
+                            <img src="images/icon_button_home.png" alt="Home" aria-label="Home" />
+                            Home
+                        </li>
+                    </a>
+                    <a href="jackets.html" title="Jackets">
+                        <li>
+                            <img src="images/icon_button_jacket.png" alt="Jackets" aria-label="Jackets" />
+                            Jackets
+                        </li>
+                    </a>
+                    <a href="about.html" title="About us">
+                        <li>
+                            <img src="images/icon_button_info.png" alt="About us" aria-label="About us" />
+                            About
+                        </li>
+                    </a>
+                    <a href="contact.html" title="Contact">
+                        <li>
+                            <img src="images/icon_button_phone.png" alt="Contact info" aria-label="Contact info" />
+                            Contact
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="aside__scalefix"></div>
+            <div class="banner_container"></div>
+        </aside>
+        <main class="checkout__container">
+            <form class="checkoutDetails" method="GET" action="checkout-success.html">
+                <fieldset>
+                    <figcaption><h2>Personal Info</h2></figcaption>
+                    <label for="name">
+                        Full name
+                        <p class="required">
+                            <i class="fas fa-asterisk"></i>
+                            <span class="requiredtext">Required field</span>
+                        </p>
+                        <p class="helptext">You need x characters.</p>
+                    </label>
+
+                    <div class="inputcontainer name">
+                        <input type="text" name="name" id="name" />
+                        <i class="fas"></i>
+                    </div>
+                    <label for="email">
+                        Email
+                        <p class="required">
+                            <i class="fas fa-asterisk"></i>
+                            <span class="requiredtext">Required field</span>
+                        </p>
+                        <p class="helptext"></p>
+                    </label>
+
+                    <div class="inputcontainer email">
+                        <input type="email" name="email" id="email" />
+                        <i class="fas"></i>
+                    </div>
+                    <label for="phone">Phone</label>
+                    <p class="helptext"></p>
+                    <div class="inputcontainer phone">
+                        <input type="tel" name="phone" id="phone" />
+                        <i class="fas"></i>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <figcaption><h2>Payment Info</h2></figcaption>
+                    <label for="invoice">
+                        <input type="radio" name="payment" id="invoice" value="invoice" checked="checked" />
+                        Invoice
+                    </label>
+                    <i>Other payment methods coming soon.</i>
+                </fieldset>
+                <fieldset>
+                    <figcaption><h2>Delivery Address</h2></figcaption>
+                    <label for="address1">
+                        Address line 1
+                        <p class="required">
+                            <i class="fas fa-asterisk"></i>
+                            <span class="requiredtext">Required field</span>
+                        </p>
+                        <p class="helptext"></p>
+                    </label>
+                    <div class="inputcontainer address1">
+                        <input type="text" name="address1" id="address1" />
+                        <i class="fas"></i>
+                    </div>
+                    <label for="address2">Address line 2</label>
+                    <p class="helptext"></p>
+                    <div class="inputcontainer address2">
+                        <input type="text" name="address2" id="address2" />
+                        <i class="fas"></i>
+                    </div>
+                    <label for="zip">
+                        Zip Code
+                        <p class="required">
+                            <i class="fas fa-asterisk"></i>
+                            <span class="requiredtext">Required field</span>
+                        </p>
+                        <p class="helptext"></p>
+                    </label>
+
+                    <div class="inputcontainer zip">
+                        <input type="text" name="zip" id="zip" />
+                        <i class="fas"></i>
+                    </div>
+                    <label for="city">
+                        Town/City
+                        <p class="required">
+                            <i class="fas fa-asterisk"></i>
+                            <span class="requiredtext">Required field</span>
+                        </p>
+                        <p class="helptext"></p>
+                    </label>
+
+                    <div class="inputcontainer city">
+                        <input type="text" name="city" id="city" />
+                        <i class="fas"></i>
+                    </div>
+                    <label for="country">
+                        Country
+                        <p class="required">
+                            <i class="fas fa-asterisk"></i>
+                            <span class="requiredtext">Required field</span>
+                        </p>
+                        <p class="helptext"></p>
+                    </label>
+
+                    <div class="inputcontainer country">
+                        <input type="text" name="country" id="country" />
+                        <i class="fas"></i>
+                    </div>
+                </fieldset>
+                <div class="placeorder_container">
+                    <span>
+                        <label for="terms">
+                            <input type="checkbox" name="terms" id="terms" value="terms_accepted" />
+                            I accept the
+                        </label>
+                        <a href="javascript:openTerms()" title="Read general terms">general terms</a>
+                        <p class="helptext"></p>
+                    </span>
+                    <button type="submit" class="jacket-cta">Place order</button>
+                </div>
+            </form>
+            <section class="basket">
+                <i class="fas fa-spinner"></i>
+                <h2>Basket loading...</i></h2>
+                <table>
+                    <tr class="rowheader">
+                        <td class="name basket_headertext">Name</td>
+                        <td class="basket_headertext">Qty</td>
+                        <td class="basket_headertext">Price (per)</td>
+                        <td class="basket_headertext">Delete</td>
+                    </tr>
+                </table>
+                <div class="basket__summary">
+                    <p>Shipment:</p>
+                    <p class="shipmentprice">0,00</p>
+                    <p>Invoice Fee:</p>
+                    <p class="invoicefee">0,00</p>
+                    <p class="basket_headertext basket_total">Total incl. tax:</p>
+                    <p class="basket_headertext basket_total totalprice">0,00</p>
+                </div>
+            </section>
+        </main>
+        <div class="banner_container top" style="display:none"></div>
+        <div class="banner_container bottom" style="display:none"></div>
+
+        <footer></footer>
+        <script src="js/common.js"></script>
+        <script src="js/countryList.js"></script>
+        <script src="js/checkout.js"></script>
+        <script src="js/checkout-form-validation.js"></script>
+        <script src="js/sendOrder.js"></script>
+    </body>
+</html>
